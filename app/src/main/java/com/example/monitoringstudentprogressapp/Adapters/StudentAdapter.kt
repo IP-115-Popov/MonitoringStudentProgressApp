@@ -12,7 +12,7 @@ import com.example.monitoringstudentprogressapp.databinding.ActivityMainBinding
 import com.example.monitoringstudentprogressapp.databinding.StudentItemBinding
 
 
-class StudentAdapter(var items: List<Student>, var context: Context): RecyclerView.Adapter<StudentAdapter.MyViewHolder>() {
+class StudentAdapter(var items: MutableList<Student>, var context: Context): RecyclerView.Adapter<StudentAdapter.MyViewHolder>() {
     class MyViewHolder(view: View): RecyclerView.ViewHolder(view)
     {
         val binding = StudentItemBinding.bind(view)
@@ -58,5 +58,10 @@ class StudentAdapter(var items: List<Student>, var context: Context): RecyclerVi
             tvKSAverage.text = item.KSAverage.toString()
             setSubjectColor(tvKSAverage, item.KSAverage)
         }
+    }
+    fun addStudent(student: Student)
+    {
+        items.add(student)
+        notifyDataSetChanged()
     }
 }

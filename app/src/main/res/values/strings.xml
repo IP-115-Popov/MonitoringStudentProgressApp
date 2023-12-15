@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">MonitoringStudentProgressApp</string>
-    <string name="TitleApp">Мониторинг успеваемости</string>
-    <string name="Save">Cохранить</string>
-    <string name="Add">Добавить</string>
+    <string name="titleApp">Мониторинг успеваемости</string>
+    <string name="save">Cохранить</string>
+    <string name="add">Добавить</string>
+    <string name="download">Загрузить</string>
+    <string name="Subject1">Физика</string>
+    <string name="Subject2">Математика</string>
+    <string name="Subject3">Информатика</string>
+    <string name="Subject4">Геометкрия</string>
+    <string-array name="KS">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
