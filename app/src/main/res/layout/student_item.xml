@@ -25,6 +25,14 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/tvFIO"
+                style="@style/TextAppearance.AppCompat.TVStudentRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="Пётр Петров Петрович" />
+
+            <TextView
                 android:id="@+id/tvKSSubject1"
                 style="@style/TextAppearance.AppCompat.TVStudentRecord"
                 android:layout_width="wrap_content"

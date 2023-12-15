@@ -16,11 +16,12 @@ class StudentAdapter(var items: MutableList<Student>, var context: Context): Rec
     class MyViewHolder(view: View): RecyclerView.ViewHolder(view)
     {
         val binding = StudentItemBinding.bind(view)
-        var tvKSSubject1 = binding.tvKSSubject1
-        var tvKSSubject2 = binding.tvKSSubject2
-        var tvKSSubject3 = binding.tvKSSubject3
-        var tvKSSubject4 = binding.tvKSSubject4
-        var tvKSAverage  = binding.tvKSAverage
+        val tvKSSubject1 = binding.tvKSSubject1
+        val tvKSSubject2 = binding.tvKSSubject2
+        val tvKSSubject3 = binding.tvKSSubject3
+        val tvKSSubject4 = binding.tvKSSubject4
+        val tvKSAverage  = binding.tvKSAverage
+        val tvFIO = binding.tvFIO
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -57,6 +58,8 @@ class StudentAdapter(var items: MutableList<Student>, var context: Context): Rec
 
             tvKSAverage.text = item.KSAverage.toString()
             setSubjectColor(tvKSAverage, item.KSAverage)
+
+            tvFIO.text= item.FIO
         }
     }
     fun addStudent(student: Student)

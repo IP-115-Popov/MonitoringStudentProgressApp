@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val studentList = mutableListOf<Student>(Student(1,2,0,1), Student(0,2,2,1))
+        val studentList = mutableListOf<Student>(Student("Пётр Петров Петрович",1,2,0,1), Student("Пётр Петров Петрович",0,2,2,1))
 
 
         val rvStudents: RecyclerView = binding.rvStudents
@@ -35,14 +35,12 @@ class MainActivity : AppCompatActivity() {
                 llAddStudentPonel.visibility = View.VISIBLE
                 return@setOnClickListener
             }
+            val FIO = binding.tvFIO.text.toString()
             val SinnKS1 = binding.SinnKS1.selectedItem.toString().toInt()
             val SinnKS2 = binding.SinnKS2.selectedItem.toString().toInt()
             val SinnKS3 = binding.SinnKS3.selectedItem.toString().toInt()
             val SinnKS4 = binding.SinnKS4.selectedItem.toString().toInt()
-            adapter.addStudent(Student(SinnKS1,SinnKS2,SinnKS3,SinnKS4))
-            //rvStudents.notifySubtreeAccessibilityStateChanged()
-                //addStudent(Student(SinnKS1,SinnKS2,SinnKS3,SinnKS4))
-            //rvStudents.adapter.addStudent()
+            adapter.addStudent(Student(FIO, SinnKS1,SinnKS2,SinnKS3,SinnKS4))
         }
         bthCloseAddStudentPonel.setOnClickListener{
             llAddStudentPonel.visibility = View.GONE
