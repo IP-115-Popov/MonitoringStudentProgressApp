@@ -9,6 +9,13 @@
     <string name="Subject3">Computer science</string>
     <string name="Subject4">Geometry</string>
     <string name="full_name">Full Name</string>
+    <string name="CreateAccount">Создайте аккаунт</string>
+    <string name="EnterLogin">Enter login</string>
+    <string name="enterEmail">Enter email</string>
+    <string name="enterPass">Enter pass</string>
+    <string name="registration">Registration</string>
+    <string name="authorization">Authorization</string>
+    <string name="Register">Register</string>
     <string-array name="KS">
         <item>0</item>
         <item>1</item>

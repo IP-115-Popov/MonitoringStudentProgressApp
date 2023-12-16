@@ -14,4 +14,11 @@
         <item>2</item>
     </string-array>
     <string name="full_name">ФИО</string>
+    <string name="CreateAccount">Create an account</string>
+    <string name="EnterLogin">Введите логин</string>
+    <string name="enterEmail">Введите email</string>
+    <string name="enterPass">Введите pass</string>
+    <string name="registration">Регистрация</string>
+    <string name="authorization">Авторизация</string>
+    <string name="Register">Заригестрироватся</string>
 </resources>
