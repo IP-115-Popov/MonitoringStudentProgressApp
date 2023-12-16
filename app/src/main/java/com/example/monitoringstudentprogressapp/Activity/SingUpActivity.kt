@@ -38,13 +38,13 @@ class SingUpActivity : AppCompatActivity() {
             val pass = userPass.text.toString().trim()
 
             if (login.isEmpty() || email.isEmpty() || pass.isEmpty())
-                Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,  getString(R.string.fieldsAreEmpty), Toast.LENGTH_LONG).show()
             else
             {
                 val user = User(login, email, pass)
                 val db = DbHelper(this, null)
                 db.addUser(user)
-                Toast.makeText(this, "пользователь $login добавлен", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, getString(R.string.userAdded), Toast.LENGTH_LONG).show()
 
                 userLogin.text.clear()
                 userEmail.text.clear()

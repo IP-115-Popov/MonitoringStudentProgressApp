@@ -17,7 +17,6 @@ class SingInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivitySingInBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //setContentView(R.layout.activity_sing_in)
 
         val userLogin = binding.userLoginAuth
         val userPass = binding.userPassAuth
@@ -36,7 +35,7 @@ class SingInActivity : AppCompatActivity() {
             val pass = userPass.text.toString().trim()
 
             if (login.isEmpty() || pass.isEmpty())
-                Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,  getString(R.string.fieldsAreEmpty), Toast.LENGTH_LONG).show()
             else
             {
                 val db = DbHelper(this, null)
@@ -50,7 +49,7 @@ class SingInActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 else
-                    Toast.makeText(this, "пользователь не $login авторизован", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, getString(R.string.notAuthorized), Toast.LENGTH_LONG).show()
                 userLogin.text.clear()
                 userPass.text.clear()
             }

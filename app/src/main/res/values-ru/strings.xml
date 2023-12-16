@@ -21,4 +21,7 @@
     <string name="registration">Регистрация</string>
     <string name="authorization">Авторизация</string>
     <string name="Register">Заригестрироватся</string>
+    <string name="fieldsAreEmpty">Не все поля заполнены</string>
+    <string name="notAuthorized">пользователь не авторизован</string>
+    <string name="userAdded">пользователь добавлен</string>
 </resources>

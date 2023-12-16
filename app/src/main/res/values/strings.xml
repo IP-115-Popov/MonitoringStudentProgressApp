@@ -15,6 +15,9 @@
     <string name="enterPass">Enter pass</string>
     <string name="registration">Registration</string>
     <string name="authorization">Authorization</string>
+    <string name="fieldsAreEmpty">Not all fields are filled in</string>
+    <string name="notAuthorized">user is not authorized</string>
+    <string name="userAdded">user added</string>
     <string name="Register">Register</string>
     <string-array name="KS">
         <item>0</item>
