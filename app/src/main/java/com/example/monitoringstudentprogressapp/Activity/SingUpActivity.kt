@@ -27,8 +27,7 @@ class SingUpActivity : AppCompatActivity() {
 
         regToLink.setOnClickListener()
         {
-            val intent = Intent(this, SingInActivity::class.java)
-            startActivity(intent)
+            finish()
         }
 
         buttonReg.setOnClickListener()

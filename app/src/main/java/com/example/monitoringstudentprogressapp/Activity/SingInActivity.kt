@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.monitoringstudentprogressapp.Constance
 import com.example.monitoringstudentprogressapp.R
 import com.example.monitoringstudentprogressapp.SaveLoad.DbHelper
 import com.example.monitoringstudentprogressapp.databinding.ActivityMainBinding
@@ -47,6 +48,7 @@ class SingInActivity : AppCompatActivity() {
                     userPass.text.clear()
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
+                    finish()
                 }
                 else
                     Toast.makeText(this, getString(R.string.notAuthorized), Toast.LENGTH_LONG).show()
@@ -54,6 +56,5 @@ class SingInActivity : AppCompatActivity() {
                 userPass.text.clear()
             }
         }
-
     }
 }
